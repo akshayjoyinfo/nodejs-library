@@ -1,0 +1,20 @@
+html(lang='en')
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="stylesheet",href="/css/bootstrap.min.css")
+        title Libray App
+    body
+        div(class="jumbotron")
+            h1(class="display-10")= title
+            hr(class="my-1")
+            a(class="btn btn-primary btn-lg", href="#", role="button") Learn more
+        
+        div(class="container") My Items
+            ul(class="list-group")
+                each val in listItems
+                    l1(class="list-group-item list-group-item-action list-group-item-primary")= val
+
+        script(src="/js/jquery.min.js")
+        script(src="/js/popper.min.js")
+        script(src="/js/bootstrap.min.js")
